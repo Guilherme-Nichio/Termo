@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4b4a4a;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block; 
+    width: auto; 
+}
+
+h1 {
+    color: #0e0d0d; 
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(5, 1fr); 
+    width: 100%; 
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 2px solid #d0d0d0; 
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box; 
+}
+
+.grid-cell.correct {
+    background-color: #b9fbc0; 
+    border-color: #76c7c0; 
+}
+
+.grid-cell.present {
+    background-color: #fdfd96;
+    border-color: #f7e8a5; 
+}
+
+.grid-cell.absent {
+    background-color: #ffffff;
+    border-color: #d0d0d0; 
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+    border: 2px solid #555555; 
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #555555; 
+    box-shadow: 0 0 4px #555555;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555555; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0e0d0d; 
+}
